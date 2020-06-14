@@ -1,3 +1,9 @@
+"""
+In this problem, you'll create a program that guesses a secret number!
+The program works as follows: you (the user) thinks of an integer between 0 (inclusive) and 100 (not inclusive). 
+The computer makes guesses, and you give it input - is its guess too high or too low? 
+Using bisection search, the computer will guess the user's secret number!
+"""
 feedback = ''
 options = ['h','l','c']
 low = 0
@@ -18,7 +24,6 @@ while feedback != 'c':
     elif feedback == 'l':
         low = avg
         
-if feedback == 'c':
-    print("Game over. Your secret number was: ", avg)
+print("Game over. Your secret number was: ", avg)
 
 
